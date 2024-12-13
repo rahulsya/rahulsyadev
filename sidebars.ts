@@ -19,11 +19,12 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     "intro",
     "multiple-git-account",
-    // {
-    //   type: "category",
-    //   label: "Tutorial",
-    //   items: ["tutorial-basics/create-a-document"],
-    // },
+    "add-tailwind-to-docusaurus",
+    {
+      type: "category",
+      label: "Tutorial",
+      items: ["tutorial-basics/create-a-document"],
+    },
   ],
 };
 

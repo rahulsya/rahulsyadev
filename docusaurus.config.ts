@@ -72,67 +72,27 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
+      hideOnScroll: true,
       title: "Rahulsya.dev",
-      // logo: {
-      //   alt: "My Site Logo",
-      //   src: "img/logo.svg",
-      // },
       items: [
-        { to: "/projects", label: "Projects", position: "left" },
+        { to: "/projects", label: "Projects", position: "right" },
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
+          position: "right",
           label: "My Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Blogs", position: "right" },
         {
-          href: "https://github.com/rahulsya",
-          label: "GitHubs",
+          to: "https://github.com/rahulsya",
+          label: "Github",
           position: "right",
         },
       ],
     },
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Intro",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Twitter",
-              href: "https://twitter.com/rahulsya2",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/rahulsya",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Rahulsya.dev`,
-    },
+    // footer: {},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
